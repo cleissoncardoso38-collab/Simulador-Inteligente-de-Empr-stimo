@@ -45,7 +45,8 @@ const simular = () => {
         Valor estimado da parcela: ${resultadoFinal.toLocaleString("pt-BR", {
         style: "currency",
         currency: "BRL"
-    })}` 
+    })} <br><br>
+        Taxa de juros: ${(taxaJuros * 100).toFixed(2)}` 
 
     } else if (tipoSimulacao === "parcela") {
 
@@ -61,7 +62,8 @@ const simular = () => {
         Valor liberado estimado: ${resultadoFinal.toLocaleString("pt-BR", {
         style: "currency",
         currency: "BRL"
-    })}`    
+    })}<br><br>
+        Taxa de juros: ${(taxaJuros * 100).toFixed(2)}`    
 
 }
 
@@ -77,6 +79,8 @@ inputValor.addEventListener ("input", limparResultado)
 selectType.addEventListener ("change", limparResultado)
 selectPmts.addEventListener ("change", limparResultado)
 selectClient.addEventListener ("change", limparResultado)
+
+
 
 
 
