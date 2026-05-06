@@ -46,7 +46,7 @@ const simular = () => {
         style: "currency",
         currency: "BRL"
     })} <br><br>
-        Taxa de juros: ${(taxaJuros * 100).toFixed(2)}` 
+        <strong>Taxa de juros: ${(taxaJuros * 100).toFixed(2)}</strong>` 
 
     } else if (tipoSimulacao === "parcela") {
 
@@ -63,7 +63,7 @@ const simular = () => {
         style: "currency",
         currency: "BRL"
     })}<br><br>
-        Taxa de juros: ${(taxaJuros * 100).toFixed(2)}`    
+        <strong>Taxa de juros: ${(taxaJuros * 100).toFixed(2)}</strong>`    
 
 }
 
