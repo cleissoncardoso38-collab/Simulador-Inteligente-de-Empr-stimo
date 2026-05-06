@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Simulador de Empréstimo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Simulador Inteligente de Empréstimo</h1>
+
+        <input oninput="limparResultado()" id="valor" type="number" placeholder="Digite o valor desejado">
+
+        <select onchange="" id="tipo_simulacao">
+            <option value="">Simular empréstimo por</option>
+            <option value="total_value">Valor total do Empréstimo</option>
+            <option value="parcela">Valor da parcela</option>
+        </select>
+
+        <select onchange="limparResultado()" id="parcelas">
+            <option value="">Selecione o prazo</option>
+            <option value="12">12 parcelas</option>
+            <option value="24">24 parcelas</option>
+            <option value="36">36 parcelas</option>
+            <option value="48">48 parcelas</option>
+            <option value="60">60 parcelas</option>
+            <option value="72">72 parcelas</option>
+            <option value="84">84 parcelas</option>
+            <option value="96">96 parcelas</option>
+        </select>
+
+        <select onchange="limparResultado()" id="cliente">
+            <option value="">Tipo de Cliente</option>
+            <option value="inss">INSS</option>
+            <option value="siape">SIAPE</option>
+        </select>
+
+        <button class="main-button" onclick="simular()">
+            Simular agora
+        </button>
+
+        <div id="resultado"></div>
+
+    </div>
+
+    
+</body>
+
+<script src="./script.js"></script>
+
+</html>
